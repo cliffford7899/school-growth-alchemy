@@ -9,8 +9,17 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "How It Works", href: "#how-it-works" },
-    { name: "Partner With Us", href: "#partner" }
+    { name: "Partner With Us", href: "#partner" },
+    { name: "Contact", href: "#contact" }
   ];
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50">
@@ -27,19 +36,22 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className="font-body text-gray-700 hover:text-brand-teal transition-colors duration-200"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button className="bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-2 rounded-full font-semibold">
+            <Button 
+              onClick={() => scrollToSection('#partner')}
+              className="bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-2 rounded-full font-semibold"
+            >
               Partner With Us
             </Button>
           </div>
@@ -62,16 +74,18 @@ const Navigation = () => {
           <div className="md:hidden bg-white border-t border-gray-100 py-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="font-body text-gray-700 hover:text-brand-teal transition-colors duration-200 px-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => scrollToSection(item.href)}
+                  className="font-body text-gray-700 hover:text-brand-teal transition-colors duration-200 px-2 text-left"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
-              <Button className="bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-2 rounded-full font-semibold mx-2 mt-4">
+              <Button 
+                onClick={() => scrollToSection('#partner')}
+                className="bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-2 rounded-full font-semibold mx-2 mt-4"
+              >
                 Partner With Us
               </Button>
             </div>

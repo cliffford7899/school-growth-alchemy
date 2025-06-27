@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Users, ArrowRight } from "lucide-react";
+import { Users, ArrowRight, Download } from "lucide-react";
 
 const PartnerSection = () => {
   return (
@@ -20,17 +20,16 @@ const PartnerSection = () => {
               className="bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
               size="lg"
             >
-              <Users className="mr-2 h-5 w-5" />
-              Become a Partner
+              <Download className="mr-2 h-5 w-5" />
+              Download Pitch Deck
             </Button>
             
             <Button 
-              variant="outline"
-              className="border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
+              className="bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
               size="lg"
             >
-              Schedule a Call
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <Users className="mr-2 h-5 w-5" />
+              Become a Partner
             </Button>
           </div>
           

@@ -7,10 +7,9 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { name: "Home", href: "#home" },
     { name: "How It Works", href: "#how-it-works" },
-    { name: "Business Model", href: "#business-model" }, 
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Investors", href: "#investors" }
+    { name: "Partner With Us", href: "#partner" }
   ];
 
   return (
@@ -22,7 +21,7 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-brand-teal to-brand-navy rounded-lg flex items-center justify-center">
               <GraduationCap className="w-6 h-6 text-white" />
             </div>
-            <span className="font-heading font-bold text-xl text-brand-navy">EduScale</span>
+            <span className="font-heading font-bold text-xl text-brand-navy">Clifford</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -41,7 +40,7 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Button className="bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-2 rounded-full font-semibold">
-              Get Started
+              Partner With Us
             </Button>
           </div>
 
@@ -73,7 +72,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button className="bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-2 rounded-full font-semibold mx-2 mt-4">
-                Get Started
+                Partner With Us
               </Button>
             </div>
           </div>

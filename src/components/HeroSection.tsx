@@ -16,20 +16,19 @@ const HeroSection = () => {
   ));
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-brand-off-white via-white to-brand-mint overflow-hidden">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-brand-off-white via-white to-brand-mint overflow-hidden">
       {/* Floating background shapes */}
       {floatingShapes}
       
       <div className="container mx-auto px-4 pt-20 pb-16 flex flex-col lg:flex-row items-center justify-between min-h-screen">
         <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up">
           <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-brand-navy mb-6 leading-tight">
-            Transform Your School into a{" "}
-            <span className="text-brand-teal">Future-Ready</span> Institution
+            We Help Schools Grow{" "}
+            <span className="text-brand-teal">Smarter</span>, Not Harder
           </h1>
           
           <p className="font-body text-xl text-gray-600 mb-8 leading-relaxed">
-            Centralized operations. Modern student programs. Branded school experiences.
-            Join the education revolution that's helping schools scale efficiently.
+            Clifford centralizes your school operations — from admissions to staffing to student enrichment — so you can focus on what matters: education.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -59,8 +58,8 @@ const HeroSection = () => {
                 <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Users className="w-12 h-12" />
                 </div>
-                <h3 className="font-heading font-bold text-2xl mb-2">10,000+</h3>
-                <p className="font-body text-lg opacity-90">Students Impacted</p>
+                <h3 className="font-heading font-bold text-2xl mb-2">Building</h3>
+                <p className="font-body text-lg opacity-90">The Future of Education</p>
               </div>
             </div>
           </div>

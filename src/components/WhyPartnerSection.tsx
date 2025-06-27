@@ -5,23 +5,23 @@ const WhyPartnerSection = () => {
   const features = [
     {
       icon: Building,
-      title: "All-In-One School HQ",
-      description: "We run your backend operations - from admissions to attendance, so you can focus on education excellence."
+      title: "One HQ for All Operations",
+      description: "Admissions, fee tracking, teacher replacement, and attendance management — all handled by Clifford's centralized system."
     },
     {
       icon: GraduationCap,
-      title: "Future-Focused Learning",
-      description: "Career-ready programs including IPMAT prep, design thinking, and soft skills development for students."
+      title: "Modern Learning Add-ons",
+      description: "Career-prep programs, workshops, and branding that help your students stand out and your school grow its reputation."
     },
     {
       icon: Users,
-      title: "Standby Teacher Service",
-      description: "No more last-minute staff shortages. Our substitute teacher network ensures continuity in education."
+      title: "Optional Merchandise Model",
+      description: "Flexible dress code with Clifford branding options that create additional revenue streams for your school."
     },
     {
       icon: TrendingUp,
-      title: "Admissions Support",
-      description: "Centralized marketing and admissions support to help grow your student base and brand recognition."
+      title: "Zero Extra Work for You",
+      description: "We handle the backend operations so you can focus on teaching excellence and student development."
     }
   ];
 
@@ -30,7 +30,7 @@ const WhyPartnerSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-heading font-bold text-4xl lg:text-5xl text-brand-navy mb-4">
-            Why Partner With Us?
+            Why Partner With Clifford?
           </h2>
           <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto">
             Join the revolution that's transforming how private schools operate and scale

@@ -6,35 +6,35 @@ const HowItWorksSection = () => {
     {
       icon: UserCheck,
       number: "01",
-      title: "School Signs Up",
-      description: "Initial consultation and partnership agreement. We understand your school's unique needs and goals."
+      title: "You Partner with Clifford",
+      description: "Initial consultation and partnership agreement. We understand your school's unique needs and vision."
     },
     {
       icon: Rocket,
       number: "02", 
-      title: "Pilot Onboarding",
-      description: "Free pilot program to demonstrate our systems. No risk, immediate value demonstration."
+      title: "We Set Up Central Operations",
+      description: "Complete integration of admissions, attendance, staffing, and administrative systems for your school."
     },
     {
       icon: Settings,
       number: "03",
-      title: "Full HQ Support",
-      description: "Complete integration of all systems - admissions, attendance, teaching support, and operations."
+      title: "We Provide Support & Branding",
+      description: "Standby teachers, tech support, modern learning programs, and optional Clifford branding elements."
     },
     {
       icon: TrendingUp,
       number: "04",
-      title: "Growth & Success",
-      description: "School sees improved efficiency, increased admissions, and enhanced student & parent satisfaction."
+      title: "Your School Grows",
+      description: "Less hassle, more impressed parents, improved efficiency, and enhanced student & parent satisfaction."
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-heading font-bold text-4xl lg:text-5xl text-brand-navy mb-4">
-            How It Works
+            How Clifford Supports Your School
           </h2>
           <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto">
             Simple, proven process to transform your school operations

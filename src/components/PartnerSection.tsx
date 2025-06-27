@@ -1,8 +1,15 @@
 
 import { Button } from "@/components/ui/button";
-import { Users, ArrowRight, Download } from "lucide-react";
+import { Users, ArrowRight, Download, Calendar } from "lucide-react";
 
 const PartnerSection = () => {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="partner" className="py-20 bg-gradient-to-br from-brand-mint to-brand-off-white">
       <div className="container mx-auto px-4 text-center">
@@ -30,6 +37,16 @@ const PartnerSection = () => {
             >
               <Users className="mr-2 h-5 w-5" />
               Become a Partner
+            </Button>
+            
+            <Button 
+              onClick={() => scrollToSection('#contact')}
+              variant="outline"
+              className="border-2 border-brand-navy text-brand-navy hover:bg-gradient-to-r hover:from-brand-navy hover:to-brand-navy/90 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-brand-navy/25"
+              size="lg"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Schedule a Call
             </Button>
           </div>
           

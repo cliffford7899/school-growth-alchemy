@@ -21,6 +21,11 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
+  const openForm = () => {
+    // Replace this URL with your actual form link
+    window.open('YOUR_FORM_LINK_HERE', '_blank');
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg z-50 border-b border-gray-100">
       <div className="container mx-auto px-4">
@@ -28,8 +33,8 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="https://i.postimg.cc/JnrpgK4Y/Clifford-Junior-s-Logo-01.jpg" 
-              alt="Clifford Junior's Logo" 
+              src="https://i.postimg.cc/CMcdHNBW/CLIFFORD-FINAL-LOGO.png" 
+              alt="Clifford Logo" 
               className="h-12 w-auto object-contain"
             />
           </div>
@@ -50,7 +55,7 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Button 
-              onClick={() => scrollToSection('#partner')}
+              onClick={openForm}
               className="bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               Partner With Us
@@ -84,7 +89,7 @@ const Navigation = () => {
                 </button>
               ))}
               <Button 
-                onClick={() => scrollToSection('#partner')}
+                onClick={openForm}
                 className="bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-6 py-3 rounded-full font-semibold mx-4 mt-4 shadow-lg"
               >
                 Partner With Us

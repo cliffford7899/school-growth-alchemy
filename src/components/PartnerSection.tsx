@@ -10,8 +10,9 @@ const PartnerSection = () => {
     }
   };
 
-  const openCalendar = () => {
-    window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2FER7VFsQ7eFTYGh_VxVPPm8pHvOo5Vz_xhF9rL-5VQ7JH9HZ_mN_QF8g4', '_blank');
+  const openForm = () => {
+    // Replace this URL with your actual form link
+    window.open('YOUR_FORM_LINK_HERE', '_blank');
   };
 
   return (
@@ -54,7 +55,7 @@ const PartnerSection = () => {
             </Button>
             
             <Button 
-              onClick={openCalendar}
+              onClick={openForm}
               variant="outline"
               className="border-2 border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white hover:border-brand-teal hover:text-brand-teal px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
               size="lg"

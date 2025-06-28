@@ -35,9 +35,6 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-brand-teal rounded-lg flex items-center justify-center">
-                  <span className="font-heading font-bold text-white text-sm">C</span>
-                </div>
                 <span className="font-heading font-bold text-xl">Clifford</span>
               </div>
               <p className="font-body text-gray-300 text-sm">

@@ -70,7 +70,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body font-semibold text-brand-navy">Email</p>
-                    <p className="font-body text-gray-600">hello@clifford.in</p>
+                    <p className="font-body text-gray-600">shushanktiwari@outlook.com</p>
                   </div>
                 </div>
                 
@@ -80,7 +80,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body font-semibold text-brand-navy">Phone</p>
-                    <p className="font-body text-gray-600">+91 98765 43210</p>
+                    <p className="font-body text-gray-600">+91 70704 53403</p>
                   </div>
                 </div>
                 
@@ -90,7 +90,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body font-semibold text-brand-navy">Location</p>
-                    <p className="font-body text-gray-600">Bangalore, India</p>
+                    <p className="font-body text-gray-600">Ranchi, India</p>
                   </div>
                 </div>
               </div>

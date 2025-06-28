@@ -37,7 +37,7 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-gray-600">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
-          <h1 className="font-heading font-extrabold text-5xl lg:text-7xl text-gray-900 mb-6 leading-tight">
+          <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-gray-900 mb-6 leading-tight">
            We help build efficient schools,{" "}
             <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
             power progess

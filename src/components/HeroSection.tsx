@@ -34,20 +34,20 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
         <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up">
           <div className="inline-flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-lg border border-white/20">
-            <span className="text-sm font-medium text-gray-600">🎓 Better future for your kids</span>
+            <span className="text-sm font-medium text-gray-600">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
           <h1 className="font-heading font-extrabold text-5xl lg:text-7xl text-gray-900 mb-6 leading-tight">
-            Reimagining{" "}
+            We Help Schools{" "}
             <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
-              Schools
+              Grow Smarter
             </span>
             <br />
-            back to Scholé
+            Not Harder
           </h1>
           
           <p className="font-body text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
-            Clifford centralizes your school operations — from admissions to staffing to student enrichment — so you can focus on what matters: education.
+            Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: education.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-8">

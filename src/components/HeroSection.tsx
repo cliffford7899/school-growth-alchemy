@@ -37,15 +37,16 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-gray-600">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
-          <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-gray-900 mb-6 leading-tight">
-           We help build efficient schools,{" "}
-            <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            power progess
-          <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            <br />
-            power learning
-          </h1>
-          
+         <h1 className="text-gray-900 text-4xl lg:text-6xl font-bold leading-snug uppercase">
+  WE HELP BUILD EFFICIENT SCHOOLS,
+</h1>
+<h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 text-4xl lg:text-6xl font-bold uppercase">
+  POWER PROGRESS
+</h1>
+<h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 text-4xl lg:text-6xl font-bold uppercase">
+  POWER LEARNING
+</h1>
+
           <p className="font-body text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
             Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: education.
           </p>

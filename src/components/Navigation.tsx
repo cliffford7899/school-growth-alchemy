@@ -33,7 +33,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="https://i.postimg.cc/CMcdHNBW/CLIFFORD-FINAL-LOGO.png" 
+              src="https://i.postimg.cc/YSZyw35p/logo-clifford.png" 
               alt="Clifford Logo" 
               className="h-12 w-auto object-contain"
             />

@@ -37,15 +37,21 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-gray-600">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
-         <h1 className="font-heading font-extrabold text-5xl lg:text-7xl text-gray-900 mb-6 leading-tight uppercase">
-  WE HELP BUILD EFFICIENT SCHOOLS,
-</h1>
-<h1 className="font-heading font-extrabold text-5xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-2 uppercase">
-  POWER PROGRESS
-</h1>
-<h1 className="font-heading font-extrabold text-5xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-700 uppercase">
-  POWER LEARNING
-</h1>
+        <div className="text-center lg:text-left">
+  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-gray-900 mb-1 leading-snug">
+    WE HELP BUILD
+  </h1>
+  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-1 leading-snug">
+    EFFICIENT SCHOOLS
+  </h1>
+  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-gray-900 mb-1 leading-snug">
+    POWER PROGRESS
+  </h1>
+  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 leading-snug">
+    POWER LEARNING
+  </h1>
+</div>
+
 
           <p className="font-body text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
             Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: education.

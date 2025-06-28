@@ -38,12 +38,12 @@ const HeroSection = () => {
           </div>
           
           <h1 className="font-heading font-extrabold text-5xl lg:text-7xl text-gray-900 mb-6 leading-tight">
-            We Help Schools{" "}
+            Reimagining{" "}
             <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
-              Grow Smarter
+              Schools
             </span>
             <br />
-            Not Harder
+            back to Scholé
           </h1>
           
           <p className="font-body text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">

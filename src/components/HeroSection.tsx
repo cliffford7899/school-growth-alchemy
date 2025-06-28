@@ -41,7 +41,7 @@ const HeroSection = () => {
            We help build efficient schools,{" "}
             <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
             power progess
-            </span>
+          <span className="bg-gradient-to-r from-brand-teal via-blue-500 to-purple-500 bg-clip-text text-transparent">
             <br />
             power learning
           </h1>

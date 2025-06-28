@@ -107,7 +107,7 @@ const HeroSection = () => {
             <div className="absolute -top-4 -left-8 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-float">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">Admissions Open</span>
+                <span className="text-sm font-medium text-gray-700">Onboardings Open</span>
               </div>
             </div>
             

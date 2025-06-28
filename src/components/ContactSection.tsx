@@ -155,7 +155,7 @@ const ContactSection = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full border-2 border-gray-200 focus:border-brand-teal rounded-lg px-4 py-3"
-                      placeholder="+91 98171 xxxx"
+                      placeholder="+91 98171 XXXX"
                     />
                   </div>
                   

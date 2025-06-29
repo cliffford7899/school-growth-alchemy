@@ -25,11 +25,11 @@ const HeroSection = () => {
         <div className="absolute bottom-20 right-1/3 w-20 h-20 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-30 blur-lg"></div>
       </div>
       
-      {/* Floating elements inspired by the reference */}
-      <div className="absolute top-32 right-32 text-4xl animate-float">🚀</div>
-      <div className="absolute top-64 left-16 text-3xl animate-float" style={{animationDelay: '1s'}}>⭐</div>
-      <div className="absolute bottom-48 right-16 text-2xl animate-float" style={{animationDelay: '2s'}}>✨</div>
-      <div className="absolute bottom-32 left-32 text-3xl animate-float" style={{animationDelay: '0.5s'}}>🎯</div>
+      {/* Floating elements - hidden on mobile */}
+      <div className="hidden lg:block absolute top-32 right-32 text-4xl animate-float">🚀</div>
+      <div className="hidden lg:block absolute top-64 left-16 text-3xl animate-float" style={{animationDelay: '1s'}}>⭐</div>
+      <div className="hidden lg:block absolute bottom-48 right-16 text-2xl animate-float" style={{animationDelay: '2s'}}>✨</div>
+      <div className="hidden lg:block absolute bottom-32 left-32 text-3xl animate-float" style={{animationDelay: '0.5s'}}>🎯</div>
       
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
         <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up">
@@ -91,8 +91,8 @@ const HeroSection = () => {
         
         <div className="lg:w-1/2 flex justify-center relative">
           <div className="relative">
-            {/* Main image container with modern styling */}
-            <div className="w-96 h-96 lg:w-[450px] lg:h-[450px] bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden border border-white/20">
+            {/* Main image container with mobile-friendly sizing */}
+            <div className="w-80 h-80 lg:w-[400px] lg:h-[400px] bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden border border-white/20">
               <img 
                 src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Happy kids learning with technology"
@@ -103,17 +103,17 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-teal-500/20 rounded-3xl" />
             </div>
             
-            {/* Floating notification cards inspired by reference */}
-            <div className="absolute -top-4 -left-8 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-float">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">Onboardings Open</span>
+            {/* Floating notification cards - adjusted for mobile */}
+            <div className="absolute -top-2 -left-4 lg:-top-4 lg:-left-8 bg-white rounded-2xl p-3 lg:p-4 shadow-xl border border-gray-100 animate-float">
+              <div className="flex items-center space-x-2 lg:space-x-3">
+                <div className="w-2 h-2 lg:w-3 lg:h-3 bg-green-400 rounded-full"></div>
+                <span className="text-xs lg:text-sm font-medium text-gray-700">Onboardings Open</span>
               </div>
             </div>
             
-            <div className="absolute -bottom-6 -right-8 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-float" style={{animationDelay: '1s'}}>
-              <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-brand-teal to-blue-500 rounded-lg flex items-center justify-center">
+            <div className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-8 bg-white rounded-2xl p-3 lg:p-4 shadow-xl border border-gray-100 animate-float" style={{animationDelay: '1s'}}>
+              <div className="flex items-center space-x-2 lg:space-x-3">
+                <div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-brand-teal to-blue-500 rounded-lg flex items-center justify-center">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -123,9 +123,9 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-12 h-12 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl rotate-12 shadow-lg"></div>
-            <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl -rotate-12 shadow-lg"></div>
+            {/* Decorative elements - adjusted for mobile */}
+            <div className="absolute -top-3 -right-3 lg:-top-6 lg:-right-6 w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl rotate-12 shadow-lg"></div>
+            <div className="absolute -bottom-2 -left-2 lg:-bottom-4 lg:-left-4 w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl -rotate-12 shadow-lg"></div>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import WhyPartnerSection from "@/components/WhyPartnerSection";
@@ -56,8 +55,6 @@ const Index = () => {
               <h4 className="font-heading font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>shushanktiwari@outlook.com</li>
-                <li>+91 70704 53403</li>
-                <li>Ranchi, India</li>
               </ul>
             </div>
           </div>

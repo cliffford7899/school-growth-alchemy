@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -71,26 +71,6 @@ const ContactSection = () => {
                   <div>
                     <p className="font-body font-semibold text-brand-navy">Email</p>
                     <p className="font-body text-gray-600">shushanktiwari@outlook.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-yellow rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-body font-semibold text-brand-navy">Phone</p>
-                    <p className="font-body text-gray-600">+91 70704 53403</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-mint to-brand-teal rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-brand-navy" />
-                  </div>
-                  <div>
-                    <p className="font-body font-semibold text-brand-navy">Location</p>
-                    <p className="font-body text-gray-600">Ranchi, India</p>
                   </div>
                 </div>
               </div>

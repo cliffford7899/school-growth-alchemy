@@ -38,6 +38,8 @@ const Index = () => {
               </div>
               <p className="font-body text-gray-300 text-sm">
                 Transforming schools through centralized operations and modern learning programs.
+                Developed by Avi Mohan Kr Shuklaa
+                www.avishuklaa.in
               </p>
             </div>
             

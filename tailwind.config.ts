@@ -68,15 +68,19 @@ export default {
 				'brand-yellow': '#FFD93D',
 				'brand-mint': '#C8F7DC',
 				'brand-off-white': '#F5F7FA',
-				'kid-blue': '#4FC3F7',
-				'kid-pink': '#F06292',
-				'kid-green': '#66BB6A',
-				'kid-purple': '#AB47BC',
-				'kid-orange': '#FF7043',
-				'kid-yellow': '#FFEB3B',
-				'warm-cream': '#FFF8E1',
-				'soft-lavender': '#E1BEE7',
-				'gentle-mint': '#B2DFDB'
+				// Updated softer, eye-friendly colors
+				'kid-blue': '#6BB6FF',
+				'kid-pink': '#FF8FAB',
+				'kid-green': '#7ED321',
+				'kid-purple': '#BD86FF',
+				'kid-orange': '#FF9F43',
+				'kid-yellow': '#FDD835',
+				'warm-cream': '#FFFEF7',
+				'soft-lavender': '#F3E8FF',
+				'gentle-mint': '#F0F9F4',
+				'soft-blue': '#E3F2FD',
+				'light-pink': '#FCE4EC',
+				'pale-yellow': '#FFFDE7'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

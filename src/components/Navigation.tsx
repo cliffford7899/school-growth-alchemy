@@ -27,16 +27,15 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg z-50 border-b-4 border-gradient-rainbow">
+    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg z-50 border-b-2 border-kid-blue/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - Fixed orientation */}
+          {/* Logo */}
           <div className="flex items-center animate-bounce-in">
             <img 
-              src="https://i.postimg.cc/CMcdHNBW/CLIFFORD-FINAL-LOGO.png" 
+              src="https://i.postimg.cc/Zn0FYw0w/logo-clifford.png" 
               alt="Clifford Logo" 
-              className="h-14 w-auto object-contain hover:scale-105 transition-all duration-200"
-              style={{ transform: 'scaleY(1)' }}
+              className="h-16 w-auto object-contain hover:scale-105 transition-all duration-200"
             />
           </div>
 
@@ -54,11 +53,11 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Desktop CTA - Reduced animation speed */}
+          {/* Desktop CTA */}
           <div className="hidden md:block animate-fade-in-up">
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105 border-4 border-white"
+              className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-white"
             >
               🤝 Partner With Us
             </Button>
@@ -79,7 +78,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-gradient-to-br from-warm-cream to-soft-lavender border-t-4 border-kid-pink py-6 rounded-b-3xl shadow-2xl animate-slide-in-left">
+          <div className="md:hidden bg-gradient-to-br from-warm-cream to-soft-lavender border-t-2 border-kid-pink py-6 rounded-b-3xl shadow-2xl animate-slide-in-left">
             <div className="flex flex-col space-y-4">
               {navItems.map((item, index) => (
                 <button
@@ -93,7 +92,7 @@ const Navigation = () => {
               ))}
               <Button 
                 onClick={openForm}
-                className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-6 py-4 rounded-full font-bold mx-4 mt-4 shadow-xl border-4 border-white"
+                className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-6 py-4 rounded-full font-bold mx-4 mt-4 shadow-xl border-2 border-white"
               >
                 🤝 Partner With Us
               </Button>

@@ -16,28 +16,28 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-warm-cream via-white to-soft-blue/30 overflow-hidden pt-20">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-white via-warm-cream to-gentle-mint/20 overflow-hidden pt-20">
       {/* Subtle background elements */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute top-32 left-16 w-20 h-20 bg-kid-yellow/60 rounded-full animate-bounce-gentle"></div>
-        <div className="absolute top-48 right-24 w-24 h-24 bg-kid-pink/50 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-64 left-32 w-16 h-16 bg-kid-blue/60 rounded-full animate-pulse-scale"></div>
-        <div className="absolute bottom-32 right-40 w-20 h-20 bg-kid-green/50 rounded-full animate-bounce-gentle" style={{animationDelay: '2s'}}></div>
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-32 left-16 w-20 h-20 bg-kid-yellow/40 rounded-full animate-bounce-gentle"></div>
+        <div className="absolute top-48 right-24 w-24 h-24 bg-kid-pink/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-64 left-32 w-16 h-16 bg-kid-blue/40 rounded-full animate-pulse-scale"></div>
+        <div className="absolute bottom-32 right-40 w-20 h-20 bg-kid-green/30 rounded-full animate-bounce-gentle" style={{animationDelay: '2s'}}></div>
       </div>
 
       {/* Wave background pattern with reduced opacity */}
-      <div className="absolute inset-0 bg-wave-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-wave-pattern opacity-5"></div>
       
       {/* Floating educational elements */}
-      <div className="absolute top-40 right-20 text-4xl md:text-5xl animate-wiggle hidden sm:block opacity-70">📚</div>
-      <div className="absolute top-56 left-24 text-3xl md:text-4xl animate-float hidden sm:block opacity-70" style={{animationDelay: '1s'}}>🎓</div>
-      <div className="absolute bottom-48 right-32 text-2xl md:text-3xl animate-bounce-gentle hidden sm:block opacity-70" style={{animationDelay: '2s'}}>✨</div>
-      <div className="absolute bottom-40 left-20 text-3xl md:text-4xl animate-wiggle hidden sm:block opacity-70" style={{animationDelay: '0.5s'}}>🌟</div>
+      <div className="absolute top-40 right-20 text-4xl md:text-5xl animate-wiggle hidden sm:block opacity-50">📚</div>
+      <div className="absolute top-56 left-24 text-3xl md:text-4xl animate-float hidden sm:block opacity-50" style={{animationDelay: '1s'}}>🎓</div>
+      <div className="absolute bottom-48 right-32 text-2xl md:text-3xl animate-bounce-gentle hidden sm:block opacity-50" style={{animationDelay: '2s'}}>✨</div>
+      <div className="absolute bottom-40 left-20 text-3xl md:text-4xl animate-wiggle hidden sm:block opacity-50" style={{animationDelay: '0.5s'}}>🌟</div>
       
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
         <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up text-center lg:text-left">
           <div className="inline-flex items-center bg-gradient-to-r from-kid-blue to-kid-green px-6 py-3 rounded-full mb-8 shadow-xl border-2 border-white animate-bounce-in">
-            <span className="text-lg font-bold text-white">🎓 Reimagining Schools back to Scholé</span>
+            <span className="text-lg font-bold text-white drop-shadow-sm">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
           <div className="space-y-4 mb-8">
@@ -62,7 +62,7 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 mb-12">
             <Button 
-              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
+              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
               size="lg"
             >
               <Download className="mr-3 h-6 w-6" />
@@ -71,7 +71,7 @@ const HeroSection = () => {
             
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
+              className="bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
               size="lg"
             >
               <Calendar className="mr-3 h-6 w-6" />
@@ -105,7 +105,7 @@ const HeroSection = () => {
               />
               
               {/* Subtle gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-kid-blue/10 via-transparent to-kid-pink/10 rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-t from-kid-blue/5 via-transparent to-kid-pink/5 rounded-2xl" />
             </div>
             
             {/* Floating notification cards */}
@@ -129,8 +129,8 @@ const HeroSection = () => {
             </div>
             
             {/* Decorative floating elements */}
-            <div className="absolute -top-4 -right-4 md:-top-8 md:-right-8 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-kid-yellow to-kid-orange rounded-3xl rotate-12 shadow-xl animate-wiggle opacity-80"></div>
-            <div className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-kid-purple to-kid-pink rounded-2xl -rotate-12 shadow-xl animate-bounce-gentle opacity-80"></div>
+            <div className="absolute -top-4 -right-4 md:-top-8 md:-right-8 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-kid-yellow to-kid-orange rounded-3xl rotate-12 shadow-xl animate-wiggle opacity-60"></div>
+            <div className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-kid-purple to-kid-pink rounded-2xl -rotate-12 shadow-xl animate-bounce-gentle opacity-60"></div>
           </div>
         </div>
       </div>

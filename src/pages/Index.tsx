@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import WhyPartnerSection from "@/components/WhyPartnerSection";
@@ -28,42 +29,61 @@ const Index = () => {
         <ContactSection />
       </main>
 
-      {/* Footer */}
-      <footer className="bg-brand-navy text-white py-12">
-        <div className="container mx-auto px-4">
+      {/* Updated playful footer */}
+      <footer className="bg-gradient-to-br from-gray-800 via-kid-blue to-kid-purple text-white py-16 relative overflow-hidden">
+        {/* Playful background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-24 h-24 bg-kid-yellow rounded-full animate-float"></div>
+          <div className="absolute bottom-10 right-10 w-20 h-20 bg-kid-pink rounded-full animate-bounce-gentle"></div>
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-kid-green rounded-full animate-pulse-scale"></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <span className="font-heading font-bold text-xl">Clifford</span>
+            <div className="animate-fade-in-up">
+              <div className="flex items-center space-x-3 mb-6">
+                <span className="font-heading font-black text-3xl bg-gradient-to-r from-kid-yellow to-kid-orange bg-clip-text text-transparent">
+                  Clifford
+                </span>
+                <span className="text-2xl animate-wiggle">🎓</span>
               </div>
-              <p className="font-body text-gray-300 text-sm">
-                Transforming schools through centralized operations and modern learning programs.
-                Developed by Avi Mohan Kr Shuklaa
-                www.avishuklaa.in
+              <p className="font-body text-gray-300 text-lg leading-relaxed">
+                Transforming schools through centralized operations and modern learning programs. 🚀
+                <br /><br />
+                <span className="text-kid-yellow font-semibold">
+                  Developed by Avi Mohan Kr Shuklaa
+                </span>
+                <br />
+                <span className="text-kid-green">www.avishuklaa.in</span>
               </p>
             </div>
             
-            <div>
-              <h4 className="font-heading font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="#" className="hover:text-brand-teal transition-colors">School Operations</a></li>
-                <li><a href="#" className="hover:text-brand-teal transition-colors">Student Programs</a></li>
-                <li><a href="#" className="hover:text-brand-teal transition-colors">Teacher Support</a></li>
-                <li><a href="#" className="hover:text-brand-teal transition-colors">Admissions</a></li>
+            <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <h4 className="font-heading font-bold text-2xl mb-6 text-kid-yellow">🎯 Services</h4>
+              <ul className="space-y-3 text-lg">
+                <li><a href="#" className="hover:text-kid-green transition-colors duration-300 flex items-center"><span className="mr-2">🏫</span>School Operations</a></li>
+                <li><a href="#" className="hover:text-kid-blue transition-colors duration-300 flex items-center"><span className="mr-2">👥</span>Student Programs</a></li>
+                <li><a href="#" className="hover:text-kid-pink transition-colors duration-300 flex items-center"><span className="mr-2">👨‍🏫</span>Teacher Support</a></li>
+                <li><a href="#" className="hover:text-kid-orange transition-colors duration-300 flex items-center"><span className="mr-2">📝</span>Admissions</a></li>
               </ul>
             </div>
             
-            <div>
-              <h4 className="font-heading font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li>shushanktiwari@outlook.com</li>
-              </ul>
+            <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              <h4 className="font-heading font-bold text-2xl mb-6 text-kid-pink">📞 Contact</h4>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3 text-lg">
+                  <span className="text-2xl">📧</span>
+                  <span className="text-gray-300">shushanktiwari@outlook.com</span>
+                </div>
+              </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-            <p className="font-body text-sm text-gray-400">
-              © 2024 Clifford. All rights reserved. Building the future of education.
+          <div className="border-t-4 border-gradient-to-r from-kid-blue to-kid-pink mt-12 pt-8 text-center">
+            <p className="font-body text-lg text-gray-300 animate-fade-in-up">
+              © 2024 <span className="text-kid-yellow font-bold">Clifford</span>. All rights reserved. 
+              <span className="text-kid-green"> Building the future of education! </span>
+              <span className="text-2xl animate-bounce-gentle inline-block">🌟</span>
             </p>
           </div>
         </div>

@@ -62,13 +62,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom brand colors
+				// Updated playful brand colors inspired by children's learning
 				'brand-teal': '#00B2A9',
 				'brand-navy': '#273C75',
-				'brand-orange': '#FF6600',
+				'brand-orange': '#FF6B35',
 				'brand-yellow': '#FFD93D',
 				'brand-mint': '#C8F7DC',
-				'brand-off-white': '#F5F7FA'
+				'brand-off-white': '#F5F7FA',
+				// New playful colors
+				'kid-blue': '#4FC3F7',
+				'kid-pink': '#F06292',
+				'kid-green': '#66BB6A',
+				'kid-purple': '#AB47BC',
+				'kid-orange': '#FF7043',
+				'kid-yellow': '#FFEB3B',
+				'warm-cream': '#FFF8E1',
+				'soft-lavender': '#E1BEE7',
+				'gentle-mint': '#B2DFDB'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -147,6 +157,36 @@ export default {
 						transform: 'translateX(0)',
 						opacity: '1'
 					}
+				},
+				// New playful animations
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
+				},
+				'bounce-in': {
+					'0%': {
+						transform: 'scale(0.3)',
+						opacity: '0'
+					},
+					'50%': {
+						transform: 'scale(1.05)'
+					},
+					'70%': {
+						transform: 'scale(0.9)'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'rainbow': {
+					'0%': { 'background-position': '0% 50%' },
+					'50%': { 'background-position': '100% 50%' },
+					'100%': { 'background-position': '0% 50%' }
+				},
+				'text-slide': {
+					'0%': { transform: 'translateY(100%)' },
+					'100%': { transform: 'translateY(-100%)' }
 				}
 			},
 			animation: {
@@ -157,11 +197,20 @@ export default {
 				'float': 'float 4s ease-in-out infinite',
 				'bounce-gentle': 'bounce-gentle 2s infinite',
 				'slide-in-left': 'slide-in-left 0.6s ease-out',
-				'slide-in-right': 'slide-in-right 0.6s ease-out'
+				'slide-in-right': 'slide-in-right 0.6s ease-out',
+				// New playful animations
+				'wiggle': 'wiggle 1s ease-in-out infinite',
+				'bounce-in': 'bounce-in 0.6s ease-out',
+				'rainbow': 'rainbow 3s ease infinite',
+				'text-slide': 'text-slide 10s linear infinite'
 			},
 			fontFamily: {
-				'heading': ['Poppins', 'Quicksand', 'Montserrat', 'sans-serif'],
+				'heading': ['Baloo 2', 'Poppins', 'Quicksand', 'Montserrat', 'sans-serif'],
 				'body': ['Nunito', 'Inter', 'Raleway', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-rainbow': 'linear-gradient(-45deg, #FF6B35, #F06292, #AB47BC, #4FC3F7, #66BB6A, #FFEB3B)',
+				'wave-pattern': "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%234FC3F7\" fill-opacity=\"0.1\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"4\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"
 			}
 		}
 	},

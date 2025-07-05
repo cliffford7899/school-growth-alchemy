@@ -16,116 +16,123 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-teal-50 overflow-hidden pt-20">
-      {/* Modern geometric background */}
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-warm-cream via-gentle-mint to-soft-lavender overflow-hidden pt-20">
+      {/* Playful background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-purple-200 to-blue-200 rounded-full opacity-30 blur-xl"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-teal-200 to-green-200 rounded-full opacity-40 blur-lg"></div>
-        <div className="absolute bottom-40 left-1/4 w-16 h-16 bg-gradient-to-br from-orange-200 to-yellow-200 rounded-full opacity-35 blur-md"></div>
-        <div className="absolute bottom-20 right-1/3 w-20 h-20 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-30 blur-lg"></div>
+        <div className="absolute top-32 left-16 w-24 h-24 bg-kid-yellow rounded-full opacity-60 animate-bounce-gentle"></div>
+        <div className="absolute top-48 right-24 w-32 h-32 bg-kid-pink rounded-full opacity-50 animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-64 left-32 w-20 h-20 bg-kid-blue rounded-full opacity-70 animate-pulse-scale"></div>
+        <div className="absolute bottom-32 right-40 w-28 h-28 bg-kid-green rounded-full opacity-60 animate-bounce-gentle" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-kid-purple rounded-full opacity-50 animate-float" style={{animationDelay: '0.5s'}}></div>
       </div>
+
+      {/* Wave background pattern */}
+      <div className="absolute inset-0 bg-wave-pattern opacity-30"></div>
       
-      {/* Floating elements - hidden on mobile */}
-      <div className="hidden lg:block absolute top-32 right-32 text-4xl animate-float">🚀</div>
-      <div className="hidden lg:block absolute top-64 left-16 text-3xl animate-float" style={{animationDelay: '1s'}}>⭐</div>
-      <div className="hidden lg:block absolute bottom-48 right-16 text-2xl animate-float" style={{animationDelay: '2s'}}>✨</div>
-      <div className="hidden lg:block absolute bottom-32 left-32 text-3xl animate-float" style={{animationDelay: '0.5s'}}>🎯</div>
+      {/* Floating educational elements */}
+      <div className="absolute top-40 right-20 text-6xl animate-wiggle hidden lg:block">📚</div>
+      <div className="absolute top-56 left-24 text-5xl animate-float hidden lg:block" style={{animationDelay: '1s'}}>🎓</div>
+      <div className="absolute bottom-48 right-32 text-4xl animate-bounce-gentle hidden lg:block" style={{animationDelay: '2s'}}>✨</div>
+      <div className="absolute bottom-40 left-20 text-5xl animate-wiggle hidden lg:block" style={{animationDelay: '0.5s'}}>🌟</div>
+      <div className="absolute top-72 right-1/3 text-3xl animate-float hidden lg:block" style={{animationDelay: '1.5s'}}>🚀</div>
       
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
-        <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up">
-          <div className="inline-flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-lg border border-white/20">
-            <span className="text-sm font-medium text-gray-600">🎓 Reimagining Schools back to Scholé</span>
+        <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up text-center lg:text-left">
+          <div className="inline-flex items-center bg-gradient-to-r from-kid-yellow to-kid-orange px-6 py-3 rounded-full mb-8 shadow-xl border-4 border-white animate-bounce-in">
+            <span className="text-lg font-bold text-white">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
-        <div className="text-center lg:text-left">
-  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-gray-900 mb-1 leading-snug">
-    WE HELP BUILD
-  </h1>
-  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-1 leading-snug">
-    EFFICIENT SCHOOLS
-  </h1>
-  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-gray-900 mb-1 leading-snug">
-    POWER PROGRESS
-  </h1>
-  <h1 className="font-heading font-extrabold text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 leading-snug">
-    POWER LEARNING
-  </h1>
-</div>
+          <div className="space-y-4 mb-8">
+            <h1 className="font-heading font-black text-5xl lg:text-7xl text-gray-800 leading-tight">
+              WE HELP BUILD
+            </h1>
+            <h1 className="font-heading font-black text-5xl lg:text-7xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight animate-rainbow bg-[length:400%_400%]">
+              EFFICIENT SCHOOLS
+            </h1>
+            <h1 className="font-heading font-black text-5xl lg:text-7xl text-gray-800 leading-tight">
+              POWER PROGRESS
+            </h1>
+            <h1 className="font-heading font-black text-5xl lg:text-7xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight animate-rainbow bg-[length:400%_400%]" style={{animationDelay: '1s'}}>
+              POWER LEARNING
+            </h1>
+          </div>
 
-
-          <p className="font-body text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
-            Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: education.
+          <p className="font-body text-2xl text-gray-700 mb-10 leading-relaxed max-w-2xl">
+            Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: 
+            <span className="font-bold text-kid-blue"> education</span> ✨
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row gap-6 mb-12">
             <Button 
-              className="bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-brand-teal/25"
+              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-xl border-4 border-white animate-pulse-scale"
               size="lg"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Get Started
+              <Download className="mr-3 h-6 w-6" />
+              🚀 Get Started
             </Button>
             
             <Button 
               onClick={openForm}
-              variant="outline"
-              className="border-2 border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white hover:border-brand-teal hover:text-brand-teal px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-xl border-4 border-white"
               size="lg"
             >
-              <Calendar className="mr-2 h-5 w-5" />
-              Schedule a Call
+              <Calendar className="mr-3 h-6 w-6" />
+              📞 Schedule a Call
             </Button>
           </div>
           
-          {/* Stats section inspired by reference */}
-          <div className="flex items-center space-x-6">
-            <div className="flex -space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full border-2 border-white"></div>
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-teal-400 rounded-full border-2 border-white"></div>
-              <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-yellow-400 rounded-full border-2 border-white"></div>
-              <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-400 rounded-full border-2 border-white"></div>
+          {/* Fun stats section */}
+          <div className="flex items-center justify-center lg:justify-start space-x-8 animate-fade-in-up">
+            <div className="flex -space-x-3">
+              <div className="w-12 h-12 bg-gradient-to-br from-kid-purple to-kid-pink rounded-full border-4 border-white shadow-lg"></div>
+              <div className="w-12 h-12 bg-gradient-to-br from-kid-blue to-kid-green rounded-full border-4 border-white shadow-lg"></div>
+              <div className="w-12 h-12 bg-gradient-to-br from-kid-yellow to-kid-orange rounded-full border-4 border-white shadow-lg"></div>
+              <div className="w-12 h-12 bg-gradient-to-br from-kid-green to-kid-blue rounded-full border-4 border-white shadow-lg"></div>
             </div>
-            <span className="text-sm font-medium text-gray-600">15+ Schools Ready to Partner</span>
+            <div className="text-center lg:text-left">
+              <div className="text-2xl font-bold text-kid-blue">15+ Schools</div>
+              <div className="text-lg text-gray-600">Ready to Partner! 🎉</div>
+            </div>
           </div>
         </div>
         
-        <div className="lg:w-1/2 flex justify-center relative">
+        <div className="lg:w-1/2 flex justify-center relative animate-fade-in-up">
           <div className="relative">
-            {/* Main image container with mobile-friendly sizing */}
-            <div className="w-80 h-80 lg:w-[400px] lg:h-[400px] bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden border border-white/20">
+            {/* Main image container */}
+            <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-white to-kid-blue/10 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden border-8 border-white">
               <img 
                 src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Happy kids learning with technology"
-                className="w-full h-full object-cover rounded-3xl"
+                className="w-full h-full object-cover rounded-2xl"
               />
               
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-teal-500/20 rounded-3xl" />
+              {/* Playful gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-kid-blue/20 via-transparent to-kid-pink/20 rounded-2xl" />
             </div>
             
-            {/* Floating notification cards - adjusted for mobile */}
-            <div className="absolute -top-2 -left-4 lg:-top-4 lg:-left-8 bg-white rounded-2xl p-3 lg:p-4 shadow-xl border border-gray-100 animate-float">
-              <div className="flex items-center space-x-2 lg:space-x-3">
-                <div className="w-2 h-2 lg:w-3 lg:h-3 bg-green-400 rounded-full"></div>
-                <span className="text-xs lg:text-sm font-medium text-gray-700">Onboardings Open</span>
+            {/* Floating notification cards */}
+            <div className="absolute -top-4 -left-6 bg-gradient-to-r from-kid-green to-kid-blue rounded-2xl p-4 shadow-2xl border-4 border-white animate-bounce-gentle">
+              <div className="flex items-center space-x-3">
+                <div className="w-4 h-4 bg-kid-yellow rounded-full animate-pulse"></div>
+                <span className="text-sm font-bold text-white">Onboardings Open! 🎉</span>
               </div>
             </div>
             
-            <div className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-8 bg-white rounded-2xl p-3 lg:p-4 shadow-xl border border-gray-100 animate-float" style={{animationDelay: '1s'}}>
-              <div className="flex items-center space-x-2 lg:space-x-3">
-                <div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-brand-teal to-blue-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">✓</span>
+            <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-kid-orange to-kid-pink rounded-2xl p-4 shadow-2xl border-4 border-white animate-float" style={{animationDelay: '1s'}}>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-kid-yellow to-kid-green rounded-xl flex items-center justify-center animate-wiggle">
+                  <span className="text-white text-lg">✅</span>
                 </div>
                 <div>
-                  <p className="text-xs font-medium text-gray-700">Modern Learning</p>
-                  <p className="text-xs text-gray-500">Ready to Launch</p>
+                  <p className="text-sm font-bold text-white">Modern Learning</p>
+                  <p className="text-xs text-white/80">Ready to Launch! 🚀</p>
                 </div>
               </div>
             </div>
             
-            {/* Decorative elements - adjusted for mobile */}
-            <div className="absolute -top-3 -right-3 lg:-top-6 lg:-right-6 w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl rotate-12 shadow-lg"></div>
-            <div className="absolute -bottom-2 -left-2 lg:-bottom-4 lg:-left-4 w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl -rotate-12 shadow-lg"></div>
+            {/* Decorative floating elements */}
+            <div className="absolute -top-8 -right-8 w-16 h-16 bg-gradient-to-br from-kid-yellow to-kid-orange rounded-3xl rotate-12 shadow-xl animate-wiggle"></div>
+            <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-kid-purple to-kid-pink rounded-2xl -rotate-12 shadow-xl animate-bounce-gentle"></div>
           </div>
         </div>
       </div>

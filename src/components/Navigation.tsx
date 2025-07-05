@@ -27,25 +27,26 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg z-50 border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg z-50 border-b-4 border-gradient-rainbow">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center animate-bounce-in">
             <img 
-              src="https://i.postimg.cc/YSZyw35p/logo-clifford.png" 
+              src="https://i.postimg.cc/CMcdHNBW/CLIFFORD-FINAL-LOGO.png" 
               alt="Clifford Logo" 
-              className="h-12 w-auto object-contain"
+              className="h-14 w-auto object-contain hover:animate-wiggle transition-all duration-300"
             />
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="font-body font-medium text-gray-700 hover:text-brand-teal transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-teal after:transition-all after:duration-300 hover:after:w-full"
+                className="font-heading font-bold text-gray-700 hover:text-kid-blue transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-kid-pink after:to-kid-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full py-2 px-3 hover:bg-warm-cream/50 rounded-full animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.name}
               </button>
@@ -53,46 +54,47 @@ const Navigation = () => {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:block">
+          <div className="hidden md:block animate-fade-in-up">
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-scale border-4 border-white"
             >
-              Partner With Us
+              🤝 Partner With Us
             </Button>
           </div>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-3 rounded-full hover:bg-warm-cream transition-colors bg-gradient-to-r from-kid-blue to-kid-green text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
+              <X className="w-6 h-6" />
             ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
+              <Menu className="w-6 h-6" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100 py-6 rounded-b-2xl shadow-lg">
+          <div className="md:hidden bg-gradient-to-br from-warm-cream to-soft-lavender border-t-4 border-kid-pink py-6 rounded-b-3xl shadow-2xl animate-slide-in-left">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="font-body font-medium text-gray-700 hover:text-brand-teal transition-colors duration-200 px-4 text-left py-2 rounded-lg hover:bg-gray-50"
+                  className="font-heading font-bold text-gray-700 hover:text-kid-blue transition-colors duration-200 px-6 text-left py-3 rounded-2xl hover:bg-white/80 mx-2 animate-fade-in-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
                 </button>
               ))}
               <Button 
                 onClick={openForm}
-                className="bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-6 py-3 rounded-full font-semibold mx-4 mt-4 shadow-lg"
+                className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-6 py-4 rounded-full font-bold mx-4 mt-4 shadow-xl border-4 border-white"
               >
-                Partner With Us
+                🤝 Partner With Us
               </Button>
             </div>
           </div>

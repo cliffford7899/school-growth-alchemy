@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, Users, Calendar } from "lucide-react";
+import { Download, Calendar } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToSection = (href: string) => {
@@ -29,12 +29,12 @@ const HeroSection = () => {
       {/* Wave background pattern */}
       <div className="absolute inset-0 bg-wave-pattern opacity-30"></div>
       
-      {/* Floating educational elements */}
-      <div className="absolute top-40 right-20 text-6xl animate-wiggle hidden lg:block">📚</div>
-      <div className="absolute top-56 left-24 text-5xl animate-float hidden lg:block" style={{animationDelay: '1s'}}>🎓</div>
-      <div className="absolute bottom-48 right-32 text-4xl animate-bounce-gentle hidden lg:block" style={{animationDelay: '2s'}}>✨</div>
-      <div className="absolute bottom-40 left-20 text-5xl animate-wiggle hidden lg:block" style={{animationDelay: '0.5s'}}>🌟</div>
-      <div className="absolute top-72 right-1/3 text-3xl animate-float hidden lg:block" style={{animationDelay: '1.5s'}}>🚀</div>
+      {/* Floating educational elements - Smaller for mobile */}
+      <div className="absolute top-40 right-20 text-4xl md:text-6xl animate-wiggle hidden sm:block">📚</div>
+      <div className="absolute top-56 left-24 text-3xl md:text-5xl animate-float hidden sm:block" style={{animationDelay: '1s'}}>🎓</div>
+      <div className="absolute bottom-48 right-32 text-2xl md:text-4xl animate-bounce-gentle hidden sm:block" style={{animationDelay: '2s'}}>✨</div>
+      <div className="absolute bottom-40 left-20 text-3xl md:text-5xl animate-wiggle hidden sm:block" style={{animationDelay: '0.5s'}}>🌟</div>
+      <div className="absolute top-72 right-1/3 text-2xl md:text-3xl animate-float hidden sm:block" style={{animationDelay: '1.5s'}}>🚀</div>
       
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
         <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up text-center lg:text-left">
@@ -43,28 +43,28 @@ const HeroSection = () => {
           </div>
           
           <div className="space-y-4 mb-8">
-            <h1 className="font-heading font-black text-5xl lg:text-7xl text-gray-800 leading-tight">
+            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-7xl text-gray-800 leading-tight">
               WE HELP BUILD
             </h1>
-            <h1 className="font-heading font-black text-5xl lg:text-7xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight animate-rainbow bg-[length:400%_400%]">
+            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-7xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight">
               EFFICIENT SCHOOLS
             </h1>
-            <h1 className="font-heading font-black text-5xl lg:text-7xl text-gray-800 leading-tight">
+            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-7xl text-gray-800 leading-tight">
               POWER PROGRESS
             </h1>
-            <h1 className="font-heading font-black text-5xl lg:text-7xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight animate-rainbow bg-[length:400%_400%]" style={{animationDelay: '1s'}}>
+            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-7xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight">
               POWER LEARNING
             </h1>
           </div>
 
-          <p className="font-body text-2xl text-gray-700 mb-10 leading-relaxed max-w-2xl">
+          <p className="font-body text-xl md:text-2xl text-gray-700 mb-10 leading-relaxed max-w-2xl">
             Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: 
             <span className="font-bold text-kid-blue"> education</span> ✨
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 mb-12">
             <Button 
-              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-xl border-4 border-white animate-pulse-scale"
+              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-4 border-white"
               size="lg"
             >
               <Download className="mr-3 h-6 w-6" />
@@ -73,7 +73,7 @@ const HeroSection = () => {
             
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-xl border-4 border-white"
+              className="bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-4 border-white"
               size="lg"
             >
               <Calendar className="mr-3 h-6 w-6" />
@@ -98,8 +98,8 @@ const HeroSection = () => {
         
         <div className="lg:w-1/2 flex justify-center relative animate-fade-in-up">
           <div className="relative">
-            {/* Main image container */}
-            <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-white to-kid-blue/10 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden border-8 border-white">
+            {/* Main image container - Smaller on mobile */}
+            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-white to-kid-blue/10 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden border-8 border-white">
               <img 
                 src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Happy kids learning with technology"
@@ -110,29 +110,29 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-kid-blue/20 via-transparent to-kid-pink/20 rounded-2xl" />
             </div>
             
-            {/* Floating notification cards */}
-            <div className="absolute -top-4 -left-6 bg-gradient-to-r from-kid-green to-kid-blue rounded-2xl p-4 shadow-2xl border-4 border-white animate-bounce-gentle">
-              <div className="flex items-center space-x-3">
-                <div className="w-4 h-4 bg-kid-yellow rounded-full animate-pulse"></div>
-                <span className="text-sm font-bold text-white">Onboardings Open! 🎉</span>
+            {/* Floating notification cards - Smaller on mobile */}
+            <div className="absolute -top-2 -left-3 md:-top-4 md:-left-6 bg-gradient-to-r from-kid-green to-kid-blue rounded-2xl p-3 md:p-4 shadow-2xl border-4 border-white animate-bounce-gentle">
+              <div className="flex items-center space-x-2 md:space-x-3">
+                <div className="w-3 h-3 md:w-4 md:h-4 bg-kid-yellow rounded-full animate-pulse"></div>
+                <span className="text-xs md:text-sm font-bold text-white">Onboardings Open! 🎉</span>
               </div>
             </div>
             
-            <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-kid-orange to-kid-pink rounded-2xl p-4 shadow-2xl border-4 border-white animate-float" style={{animationDelay: '1s'}}>
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-kid-yellow to-kid-green rounded-xl flex items-center justify-center animate-wiggle">
-                  <span className="text-white text-lg">✅</span>
+            <div className="absolute -bottom-3 -right-3 md:-bottom-6 md:-right-6 bg-gradient-to-r from-kid-orange to-kid-pink rounded-2xl p-3 md:p-4 shadow-2xl border-4 border-white animate-float" style={{animationDelay: '1s'}}>
+              <div className="flex items-center space-x-2 md:space-x-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-kid-yellow to-kid-green rounded-xl flex items-center justify-center animate-wiggle">
+                  <span className="text-white text-sm md:text-lg">✅</span>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white">Modern Learning</p>
+                  <p className="text-xs md:text-sm font-bold text-white">Modern Learning</p>
                   <p className="text-xs text-white/80">Ready to Launch! 🚀</p>
                 </div>
               </div>
             </div>
             
-            {/* Decorative floating elements */}
-            <div className="absolute -top-8 -right-8 w-16 h-16 bg-gradient-to-br from-kid-yellow to-kid-orange rounded-3xl rotate-12 shadow-xl animate-wiggle"></div>
-            <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-kid-purple to-kid-pink rounded-2xl -rotate-12 shadow-xl animate-bounce-gentle"></div>
+            {/* Decorative floating elements - Smaller on mobile */}
+            <div className="absolute -top-4 -right-4 md:-top-8 md:-right-8 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-kid-yellow to-kid-orange rounded-3xl rotate-12 shadow-xl animate-wiggle"></div>
+            <div className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-kid-purple to-kid-pink rounded-2xl -rotate-12 shadow-xl animate-bounce-gentle"></div>
           </div>
         </div>
       </div>

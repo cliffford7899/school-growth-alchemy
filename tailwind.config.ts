@@ -62,14 +62,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated playful brand colors inspired by children's learning
 				'brand-teal': '#00B2A9',
 				'brand-navy': '#273C75',
 				'brand-orange': '#FF6B35',
 				'brand-yellow': '#FFD93D',
 				'brand-mint': '#C8F7DC',
 				'brand-off-white': '#F5F7FA',
-				// New playful colors
 				'kid-blue': '#4FC3F7',
 				'kid-pink': '#F06292',
 				'kid-green': '#66BB6A',
@@ -158,7 +156,6 @@ export default {
 						opacity: '1'
 					}
 				},
-				// New playful animations
 				'wiggle': {
 					'0%, 100%': { transform: 'rotate(-3deg)' },
 					'50%': { transform: 'rotate(3deg)' }
@@ -178,31 +175,19 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
-				},
-				'rainbow': {
-					'0%': { 'background-position': '0% 50%' },
-					'50%': { 'background-position': '100% 50%' },
-					'100%': { 'background-position': '0% 50%' }
-				},
-				'text-slide': {
-					'0%': { transform: 'translateY(100%)' },
-					'100%': { transform: 'translateY(-100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in-up': 'fade-in-up 0.6s ease-out',
-				'pulse-scale': 'pulse-scale 2s ease-in-out infinite',
-				'float': 'float 4s ease-in-out infinite',
-				'bounce-gentle': 'bounce-gentle 2s infinite',
+				'pulse-scale': 'pulse-scale 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'bounce-gentle': 'bounce-gentle 3s infinite',
 				'slide-in-left': 'slide-in-left 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
-				// New playful animations
-				'wiggle': 'wiggle 1s ease-in-out infinite',
-				'bounce-in': 'bounce-in 0.6s ease-out',
-				'rainbow': 'rainbow 3s ease infinite',
-				'text-slide': 'text-slide 10s linear infinite'
+				'wiggle': 'wiggle 2s ease-in-out infinite',
+				'bounce-in': 'bounce-in 0.6s ease-out'
 			},
 			fontFamily: {
 				'heading': ['Baloo 2', 'Poppins', 'Quicksand', 'Montserrat', 'sans-serif'],

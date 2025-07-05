@@ -30,12 +30,13 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg z-50 border-b-4 border-gradient-rainbow">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo - Fixed orientation */}
           <div className="flex items-center animate-bounce-in">
             <img 
               src="https://i.postimg.cc/CMcdHNBW/CLIFFORD-FINAL-LOGO.png" 
               alt="Clifford Logo" 
-              className="h-14 w-auto object-contain hover:animate-wiggle transition-all duration-300"
+              className="h-14 w-auto object-contain hover:scale-105 transition-all duration-200"
+              style={{ transform: 'scaleY(1)' }}
             />
           </div>
 
@@ -45,7 +46,7 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="font-heading font-bold text-gray-700 hover:text-kid-blue transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-kid-pink after:to-kid-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full py-2 px-3 hover:bg-warm-cream/50 rounded-full animate-fade-in-up"
+                className="font-heading font-bold text-gray-700 hover:text-kid-blue transition-all duration-200 relative after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-kid-pink after:to-kid-blue after:transition-all after:duration-200 hover:after:w-full after:rounded-full py-2 px-3 hover:bg-warm-cream/50 rounded-full animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.name}
@@ -53,11 +54,11 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA - Reduced animation speed */}
           <div className="hidden md:block animate-fade-in-up">
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-scale border-4 border-white"
+              className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105 border-4 border-white"
             >
               🤝 Partner With Us
             </Button>

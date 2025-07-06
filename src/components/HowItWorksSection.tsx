@@ -76,7 +76,7 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center bg-gradient-to-r from-kid-purple to-kid-pink px-6 py-3 rounded-full mb-6 shadow-xl border-2 border-white">
-            <span className="text-lg font-bold text-white drop-shadow-sm">🚀 How It Works</span>
+            <span className="font-handwritten text-lg font-bold text-white drop-shadow-sm">🚀 How It Works</span>
           </div>
           <h2 className="font-heading font-black text-4xl lg:text-5xl text-gray-800 mb-6 drop-shadow-sm">
             How 
@@ -130,7 +130,7 @@ const HowItWorksSection = () => {
                       {step.title}
                     </h3>
                     
-                    <p className={`font-body text-xl lg:text-2xl ${step.textColor} opacity-90 leading-relaxed max-w-2xl mx-auto drop-shadow-md`}>
+                    <p className={`font-handwritten text-xl lg:text-2xl ${step.textColor} opacity-90 leading-relaxed max-w-2xl mx-auto drop-shadow-md`}>
                       {step.description}
                     </p>
                   </div>

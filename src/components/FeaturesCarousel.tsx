@@ -9,44 +9,32 @@ const FeaturesCarousel = () => {
 
   const features = [
     {
-      title: "Smart School Operations",
-      description: "Streamline admissions, attendance, and daily operations with our intelligent management system",
-      cartoon: "🏫",
-      bgColor: "from-kid-blue/80 to-kid-purple/80",
-      bgAccent: "bg-soft-blue/30",
-      textColor: "text-gray-800"
+      title: "One Centralized HQ",
+      description: "We manage admissions, attendance, substitute teachers, and more — from one expert team.",
+      cartoon: "🏢",
+      bgColor: "from-kid-blue/90 to-kid-purple/90",
+      bgAccent: "bg-soft-blue/40"
     },
     {
-      title: "Modern Learning Programs",
-      description: "Engage students with interactive workshops, career prep, and skill-building activities",
-      cartoon: "🎓",
-      bgColor: "from-kid-green/80 to-kid-blue/80",
-      bgAccent: "bg-gentle-mint/30",
-      textColor: "text-gray-800"
+      title: "Future-Ready Curriculum", 
+      description: "Introduce optional programs like aptitude prep, design thinking, and entrepreneurship.",
+      cartoon: "💡",
+      bgColor: "from-kid-green/90 to-kid-blue/90",
+      bgAccent: "bg-gentle-mint/40"
     },
     {
-      title: "Teacher Excellence Support",
-      description: "Provide your educators with resources, training, and professional development tools",
+      title: "Branded Student Experience",
+      description: "Offer students the option to wear school merchandise instead of rigid uniforms.",
+      cartoon: "👕",
+      bgColor: "from-kid-orange/90 to-kid-pink/90",
+      bgAccent: "bg-light-pink/40"
+    },
+    {
+      title: "Instant Teacher Backup",
+      description: "No more panic when a teacher is absent — our trained interns step in on-demand.",
       cartoon: "👨‍🏫",
-      bgColor: "from-kid-orange/80 to-kid-pink/80",
-      bgAccent: "bg-light-pink/30",
-      textColor: "text-gray-800"
-    },
-    {
-      title: "Student Success Tracking",
-      description: "Monitor progress, celebrate achievements, and support every child's learning journey",
-      cartoon: "⭐",
-      bgColor: "from-kid-yellow/80 to-kid-orange/80",
-      bgAccent: "bg-pale-yellow/30",
-      textColor: "text-gray-800"
-    },
-    {
-      title: "Parent Engagement",
-      description: "Keep families connected with transparent communication and involvement opportunities",
-      cartoon: "👨‍👩‍👧‍👦",
-      bgColor: "from-kid-pink/80 to-kid-purple/80",
-      bgAccent: "bg-soft-lavender/30",
-      textColor: "text-gray-800"
+      bgColor: "from-kid-yellow/90 to-kid-orange/90",
+      bgAccent: "bg-pale-yellow/40"
     }
   ];
 
@@ -79,15 +67,16 @@ const FeaturesCarousel = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center bg-gradient-to-r from-kid-purple/90 to-kid-pink/90 px-6 py-3 rounded-full mb-6 shadow-xl border-2 border-white">
-            <span className="text-lg font-bold text-white drop-shadow-sm">✨ What We Offer</span>
+          <div className="inline-flex items-center bg-gradient-to-r from-kid-purple to-kid-pink px-6 py-3 rounded-full mb-6 shadow-xl border-2 border-white">
+            <span className="font-handwritten text-lg font-bold text-white drop-shadow-sm">✨ What We Offer</span>
           </div>
           <h2 className="font-heading font-black text-4xl lg:text-5xl text-gray-800 mb-6 drop-shadow-sm">
-            Transform Your 
-            <span className="bg-gradient-to-r from-kid-blue to-kid-purple bg-clip-text text-transparent"> School Experience</span>
+            Amazing 
+            <span className="bg-gradient-to-r from-kid-blue to-kid-purple bg-clip-text text-transparent"> Features</span>
+            <br />Just for You!
           </h2>
           <p className="font-body text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed drop-shadow-sm">
-            Discover how Clifford brings innovation and joy to education! 🌟
+            Discover all the wonderful things we can do for your school! 🌟
           </p>
         </div>
 
@@ -108,7 +97,7 @@ const FeaturesCarousel = () => {
                   className={`min-w-full ${feature.bgAccent} relative overflow-hidden`}
                 >
                   {/* Gradient background */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-90`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-95`}></div>
                   
                   {/* Background pattern */}
                   <div className="absolute inset-0 opacity-10">
@@ -122,11 +111,11 @@ const FeaturesCarousel = () => {
                       {feature.cartoon}
                     </div>
                     
-                    <h3 className={`font-heading font-bold text-4xl lg:text-5xl ${feature.textColor} mb-6 drop-shadow-lg`}>
+                    <h3 className="font-heading font-bold text-4xl lg:text-5xl text-white mb-6 drop-shadow-lg">
                       {feature.title}
                     </h3>
                     
-                    <p className={`font-body text-xl lg:text-2xl ${feature.textColor} opacity-90 leading-relaxed max-w-2xl mx-auto drop-shadow-md`}>
+                    <p className="font-handwritten text-xl lg:text-2xl text-white opacity-90 leading-relaxed max-w-2xl mx-auto drop-shadow-md">
                       {feature.description}
                     </p>
                   </div>

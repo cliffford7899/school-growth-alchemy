@@ -194,8 +194,13 @@ export default {
 				'bounce-in': 'bounce-in 0.6s ease-out'
 			},
 			fontFamily: {
-				'heading': ['Baloo 2', 'Poppins', 'Quicksand', 'Montserrat', 'sans-serif'],
-				'body': ['Nunito', 'Inter', 'Raleway', 'sans-serif']
+				// Playful, Child-Centric Font System
+				'heading': ['Baloo Bhaijaan 2', 'Fredoka One', 'Luckiest Guy', 'sans-serif'], // Main headings
+				'heading-fun': ['Luckiest Guy', 'Fredoka One', 'Baloo Bhaijaan 2', 'sans-serif'], // Super fun headings
+				'body': ['Comic Neue', 'Quicksand', 'Patrick Hand', 'sans-serif'], // Body text
+				'handwritten': ['Schoolbell', 'Gloria Hallelujah', 'Patrick Hand', 'cursive'], // Cards & special text
+				'button': ['Chewy', 'Boogaloo', 'Baloo Bhaijaan 2', 'sans-serif'], // Buttons & navigation
+				'playful': ['Patrick Hand', 'Comic Neue', 'Quicksand', 'sans-serif'] // Alternative body
 			},
 			backgroundImage: {
 				'gradient-rainbow': 'linear-gradient(-45deg, #FF6B35, #F06292, #AB47BC, #4FC3F7, #66BB6A, #FFEB3B)',

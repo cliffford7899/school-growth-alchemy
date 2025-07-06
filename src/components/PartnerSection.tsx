@@ -26,7 +26,7 @@ const PartnerSection = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           <div className="inline-flex items-center bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full mb-8 shadow-lg border border-white/20">
-            <span className="text-lg font-semibold text-brand-teal">🚀 Join the Future of Education</span>
+            <span className="font-handwritten text-lg font-semibold text-brand-teal">🚀 Join the Future of Education</span>
           </div>
           
           <h2 className="font-heading font-bold text-4xl lg:text-6xl text-gray-900 mb-6">
@@ -39,7 +39,7 @@ const PartnerSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Button 
-              className="bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg"
+              className="font-button bg-gradient-to-r from-brand-teal to-blue-500 hover:from-brand-teal/90 hover:to-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg"
               size="lg"
             >
               <Download className="mr-3 h-6 w-6" />
@@ -47,7 +47,7 @@ const PartnerSection = () => {
             </Button>
             
             <Button 
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg"
+              className="font-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg"
               size="lg"
             >
               <Users className="mr-3 h-6 w-6" />
@@ -57,7 +57,7 @@ const PartnerSection = () => {
             <Button 
               onClick={openForm}
               variant="outline"
-              className="border-2 border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white hover:border-brand-teal hover:text-brand-teal px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="font-button border-2 border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white hover:border-brand-teal hover:text-brand-teal px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
               size="lg"
             >
               <Calendar className="mr-3 h-6 w-6" />
@@ -86,16 +86,16 @@ const PartnerSection = () => {
               {/* Trust indicators */}
               <div className="flex justify-center items-center mt-8 space-x-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-brand-teal">15+</div>
-                  <div className="text-sm text-gray-500">Partner Schools</div>
+                  <div className="font-heading text-2xl font-bold text-brand-teal">15+</div>
+                  <div className="font-handwritten text-sm text-gray-500">Partner Schools</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-brand-teal">100%</div>
-                  <div className="text-sm text-gray-500">Success Rate</div>
+                  <div className="font-heading text-2xl font-bold text-brand-teal">100%</div>
+                  <div className="font-handwritten text-sm text-gray-500">Success Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-brand-teal">24/7</div>
-                  <div className="text-sm text-gray-500">Support</div>
+                  <div className="font-heading text-2xl font-bold text-brand-teal">24/7</div>
+                  <div className="font-handwritten text-sm text-gray-500">Support</div>
                 </div>
               </div>
             </div>

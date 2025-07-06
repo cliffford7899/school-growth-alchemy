@@ -45,7 +45,7 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="font-heading font-bold text-gray-700 hover:text-kid-blue transition-all duration-200 relative after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-kid-pink after:to-kid-blue after:transition-all after:duration-200 hover:after:w-full after:rounded-full py-2 px-3 hover:bg-warm-cream/50 rounded-full animate-fade-in-up"
+                className="font-button font-bold text-lg text-gray-700 hover:text-kid-blue transition-all duration-200 relative after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-kid-pink after:to-kid-blue after:transition-all after:duration-200 hover:after:w-full after:rounded-full py-2 px-3 hover:bg-warm-cream/50 rounded-full animate-fade-in-up hover:scale-105"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.name}
@@ -57,7 +57,7 @@ const Navigation = () => {
           <div className="hidden md:block animate-fade-in-up">
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-white"
+              className="font-button bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-white"
             >
               🤝 Partner With Us
             </Button>
@@ -84,7 +84,7 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="font-heading font-bold text-gray-700 hover:text-kid-blue transition-colors duration-200 px-6 text-left py-3 rounded-2xl hover:bg-white/80 mx-2 animate-fade-in-up"
+                  className="font-button font-bold text-lg text-gray-700 hover:text-kid-blue transition-colors duration-200 px-6 text-left py-3 rounded-2xl hover:bg-white/80 mx-2 animate-fade-in-up hover:scale-105"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
@@ -92,7 +92,7 @@ const Navigation = () => {
               ))}
               <Button 
                 onClick={openForm}
-                className="bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-6 py-4 rounded-full font-bold mx-4 mt-4 shadow-xl border-2 border-white"
+                className="font-button bg-gradient-to-r from-kid-orange to-kid-pink hover:from-kid-pink hover:to-kid-purple text-white px-6 py-4 rounded-full font-bold mx-4 mt-4 shadow-xl border-2 border-white"
               >
                 🤝 Partner With Us
               </Button>

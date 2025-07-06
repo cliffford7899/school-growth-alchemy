@@ -50,7 +50,7 @@ const WhyPartnerSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center bg-gradient-to-r from-kid-purple to-kid-pink px-6 py-3 rounded-full mb-6 shadow-xl border-4 border-white">
-            <span className="text-lg font-bold text-white">🤝 Partnership Benefits</span>
+            <span className="font-handwritten text-lg font-bold text-white">🤝 Partnership Benefits</span>
           </div>
           <h2 className="font-heading font-black text-5xl lg:text-6xl text-gray-800 mb-6">
             Why Partner With 
@@ -85,7 +85,7 @@ const WhyPartnerSection = () => {
                   {feature.title}
                 </h3>
                 
-                <p className="font-body text-white/90 leading-relaxed text-lg drop-shadow-md">
+                <p className="font-handwritten text-white/90 leading-relaxed text-lg drop-shadow-md">
                   {feature.description}
                 </p>
               </div>

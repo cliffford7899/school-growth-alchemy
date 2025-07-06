@@ -37,32 +37,32 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
         <div className="lg:w-1/2 mb-12 lg:mb-0 animate-fade-in-up text-center lg:text-left">
           <div className="inline-flex items-center bg-gradient-to-r from-kid-blue to-kid-green px-6 py-3 rounded-full mb-8 shadow-xl border-2 border-white animate-bounce-in">
-            <span className="text-lg font-bold text-white drop-shadow-sm">🎓 Reimagining Schools back to Scholé</span>
+            <span className="font-handwritten text-lg font-bold text-white drop-shadow-sm">🎓 Reimagining Schools back to Scholé</span>
           </div>
           
           <div className="space-y-4 mb-8">
-            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight drop-shadow-sm">
+            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight drop-shadow-sm">
               WE HELP BUILD
             </h1>
-            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight">
+            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight">
               EFFICIENT SCHOOLS
             </h1>
-            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight drop-shadow-sm">
+            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight drop-shadow-sm">
               POWER PROGRESS
             </h1>
-            <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight">
+            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight">
               POWER LEARNING
             </h1>
           </div>
 
           <p className="font-body text-xl md:text-2xl text-gray-700 mb-10 leading-relaxed max-w-2xl drop-shadow-sm">
             Clifford centralizes your school operations from admissions to staffing to student enrichment so you can focus on what matters: 
-            <span className="font-bold text-kid-blue"> education</span> ✨
+            <span className="font-handwritten font-bold text-kid-blue"> education</span> ✨
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 mb-12">
             <Button 
-              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
+              className="font-button bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-pink text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
               size="lg"
             >
               <Download className="mr-3 h-6 w-6" />
@@ -71,7 +71,7 @@ const HeroSection = () => {
             
             <Button 
               onClick={openForm}
-              className="bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
+              className="font-button bg-gradient-to-r from-kid-orange to-kid-yellow hover:from-kid-yellow hover:to-kid-green text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl shadow-xl border-2 border-white"
               size="lg"
             >
               <Calendar className="mr-3 h-6 w-6" />
@@ -88,8 +88,8 @@ const HeroSection = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-kid-green to-kid-blue rounded-full border-4 border-white shadow-lg"></div>
             </div>
             <div className="text-center lg:text-left">
-              <div className="text-2xl font-bold text-kid-blue drop-shadow-sm">15+ Schools</div>
-              <div className="text-lg text-gray-600">Ready to Partner! 🎉</div>
+              <div className="font-heading text-2xl font-bold text-kid-blue drop-shadow-sm">15+ Schools</div>
+              <div className="font-handwritten text-lg text-gray-600">Ready to Partner! 🎉</div>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ const HeroSection = () => {
             <div className="absolute -top-2 -left-3 md:-top-4 md:-left-6 bg-gradient-to-r from-kid-green to-kid-blue rounded-2xl p-3 md:p-4 shadow-2xl border-2 border-white animate-bounce-gentle">
               <div className="flex items-center space-x-2 md:space-x-3">
                 <div className="w-3 h-3 md:w-4 md:h-4 bg-kid-yellow rounded-full animate-pulse"></div>
-                <span className="text-xs md:text-sm font-bold text-white drop-shadow-sm">Onboardings Open! 🎉</span>
+                <span className="font-handwritten text-xs md:text-sm font-bold text-white drop-shadow-sm">Onboardings Open! 🎉</span>
               </div>
             </div>
             
@@ -122,8 +122,8 @@ const HeroSection = () => {
                   <span className="text-white text-sm md:text-lg">✅</span>
                 </div>
                 <div>
-                  <p className="text-xs md:text-sm font-bold text-white drop-shadow-sm">Modern Learning</p>
-                  <p className="text-xs text-white/90">Ready to Launch! 🚀</p>
+                  <p className="font-handwritten text-xs md:text-sm font-bold text-white drop-shadow-sm">Modern Learning</p>
+                  <p className="font-playful text-xs text-white/90">Ready to Launch! 🚀</p>
                 </div>
               </div>
             </div>

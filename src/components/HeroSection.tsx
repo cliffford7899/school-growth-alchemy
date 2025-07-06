@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, Calendar } from "lucide-react";
 
@@ -41,16 +40,16 @@ const HeroSection = () => {
           </div>
           
           <div className="space-y-4 mb-8">
-            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight drop-shadow-sm">
+            <h1 className="font-buddy-play font-black text-3xl md:text-4xl lg:text-5xl text-gray-800 leading-tight drop-shadow-sm">
               WE HELP BUILD
             </h1>
-            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight">
+            <h1 className="font-buddy-play font-black text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-pink bg-clip-text text-transparent leading-tight">
               EFFICIENT SCHOOLS
             </h1>
-            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight drop-shadow-sm">
+            <h1 className="font-buddy-play font-black text-3xl md:text-4xl lg:text-5xl text-gray-800 leading-tight drop-shadow-sm">
               POWER PROGRESS
             </h1>
-            <h1 className="font-heading-fun font-black text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight">
+            <h1 className="font-buddy-play font-black text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-kid-green via-kid-yellow to-kid-orange bg-clip-text text-transparent leading-tight">
               POWER LEARNING
             </h1>
           </div>

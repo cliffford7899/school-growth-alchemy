@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Users, ArrowRight, Download, Calendar } from "lucide-react";
 
@@ -29,10 +28,11 @@ const PartnerSection = () => {
             <span className="font-handwritten text-lg font-semibold text-brand-teal">🚀 Join the Future of Education</span>
           </div>
           
-          <h2 className="font-heading font-bold text-4xl lg:text-6xl text-gray-900 mb-6">
+          <h2 className="font-buddy-play font-bold text-3xl lg:text-5xl text-gray-900 mb-6">
             Bring Clifford to Your Campus
           </h2>
           
+          {/* Description, buttons, trust indicators card */}
           <p className="font-body text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto">
             We're onboarding our first 15 schools. Let's build this future together and transform education for the next generation.
           </p>
@@ -66,7 +66,6 @@ const PartnerSection = () => {
           </div>
           
           <div className="bg-white/90 backdrop-blur-sm p-8 lg:p-12 rounded-3xl shadow-2xl border border-white/20 relative overflow-hidden">
-            {/* Decorative background pattern */}
             <div className="absolute inset-0 opacity-5">
               <div className="absolute top-4 left-4 text-6xl">🎓</div>
               <div className="absolute top-4 right-4 text-4xl">📚</div>
@@ -83,7 +82,6 @@ const PartnerSection = () => {
                 No upfront costs, no long-term contracts — just better operations, happier students, and a brighter tomorrow for education.
               </p>
               
-              {/* Trust indicators */}
               <div className="flex justify-center items-center mt-8 space-x-8">
                 <div className="text-center">
                   <div className="font-heading text-2xl font-bold text-brand-teal">15+</div>

@@ -198,6 +198,7 @@ export default {
 				'heading': ['Baloo Bhaijaan 2', 'Fredoka One', 'Luckiest Guy', 'sans-serif'], // Main headings
 				'heading-fun': ['Luckiest Guy', 'Fredoka One', 'Baloo Bhaijaan 2', 'sans-serif'], // Super fun headings
 				'buddy-play': ['Buddy Play', 'Luckiest Guy', 'Fredoka One', 'cursive'], // Buddy Play for hero
+				'kid-zonia': ['Kalam', 'Kid Zonia', 'Luckiest Guy', 'Fredoka One', 'cursive'], // Kid Zonia font
 				'body': ['Comic Neue', 'Quicksand', 'Patrick Hand', 'sans-serif'], // Body text
 				'handwritten': ['Schoolbell', 'Gloria Hallelujah', 'Patrick Hand', 'cursive'], // Cards & special text
 				'button': ['Chewy', 'Boogaloo', 'Baloo Bhaijaan 2', 'sans-serif'], // Buttons & navigation
